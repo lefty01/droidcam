@@ -7,7 +7,7 @@
 # Use at your own risk. See README file for more details.
 
 GTK   = `pkg-config --libs --cflags gtk+-2.0`
-LIBS     = -lgthread-2.0 -l:/usr/lib/libswscale.a  -l:/usr/lib/libavutil.a -l:/opt/libjpeg-turbo/lib`getconf LONG_BIT`/libturbojpeg.a
+LIBS     = -lgthread-2.0 -lswscale -lavutil -lturbojpeg
 CC       =
 SRC      = src/connection.c src/decoder.c
 
